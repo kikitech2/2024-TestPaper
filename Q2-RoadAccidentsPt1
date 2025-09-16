@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class RunApplication
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String AccidentVehicleType;
+        String City;
+        int AccidentTotal;
+
+        System.out.println("Enter the accident vehicle type:");
+        AccidentVehicleType =scanner.nextLine();
+        System.out.println("Enter the city for the vehicle accidents:");
+        City =scanner.nextLine();
+        System.out.println("Enter the total vehicle accidents in Cape Town:");
+        AccidentTotal = scanner.nextInt();
+        scanner.nextLine();
+
+        RoadAccidentReport roadAccidentReport = new RoadAccidentReport(AccidentVehicleType,City,AccidentTotal);
+        roadAccidentReport.printAccidentReport();
+    }
+}
