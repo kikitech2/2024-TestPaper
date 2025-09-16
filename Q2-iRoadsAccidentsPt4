@@ -1,0 +1,7 @@
+public interface iRoadsAccidents {
+
+    String getAccidentVehicleType();
+    String getCity();
+    int getAccidentTotal();
+
+}
